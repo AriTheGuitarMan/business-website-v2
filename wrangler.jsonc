@@ -4,7 +4,7 @@
 "main": "src/index.ts",
 "routes": [
     {
-      "pattern": "waldfamilyoffice.com",
+      "pattern": "waldfamilyofficev2.com",
       "custom_domain": true
     }
 ],
