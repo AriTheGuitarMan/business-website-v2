@@ -10,5 +10,11 @@
   ],
   "observability": {
     "enabled": true
+  },
+  "assets": {
+    "directory": "./dist/",
+        "binding": "ASSETS",
+    "html_handling": "force-trailing-slash",
+    "not_found_handling": "404-page"
   }
 }
