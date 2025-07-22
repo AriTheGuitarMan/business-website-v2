@@ -27,14 +27,15 @@
 // }
 
 export default {
-  async fetch(request: Request) : Promise<Response> {
+  async fetch(request: Request, env, ctx) {
 
-
- const remote = "https://waldfamilyoffice.com";
-
-    return await fetch(remote, request);
-    // return new Response("This Is The Family Office Site.");
-  },
-};
-
-
+ const url = "https://waldfamilyoffice.com";
+ if (url){
+      return Response.redirect(url, 301);
+ }
+ return fetch(request);
+// const modifiedRequest = new Request(url, request);
+    // return await fetch(remote, request);
+    // return new Response(modifiedRequest);
+},
+}
