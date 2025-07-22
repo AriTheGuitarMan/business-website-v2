@@ -74,7 +74,7 @@ export default {
     
     `;
 
-    return new Response(html, {
+    return new Response('FO', {
       headers: {
         "content-type": "text/html;charset=UTF-8",
       },
