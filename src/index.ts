@@ -38,11 +38,46 @@
 //       headers: { "content-type": "text/plain" },
 //     });
 
-import html from './index.html'
+// import html from './index.html'
 
-async function handleRequest(request, env) {
-  const output = html
-  const headers = { 'Content-Type': 'text/html' }
-  return new Response(output, { headers })
-}
+// async function handleRequest(request, env) {
+//   const output = html
+//   const headers = { 'Content-Type': 'text/html' }
+//   return new Response(output, { headers })
+// }
 
+
+export default {
+  async fetch(request): Promise<Response> {
+    const html = `
+    
+    
+    
+    
+    
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HooBank</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+
+    
+    
+    
+    `;
+
+    return new Response(html, {
+      headers: {
+        "content-type": "text/html;charset=UTF-8",
+      },
+    });
+  },
+} satisfies ExportedHandler;
