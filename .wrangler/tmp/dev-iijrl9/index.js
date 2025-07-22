@@ -3,8 +3,9 @@ var __name = (target, value) => __defProp(target, "name", { value, configurable:
 
 // src/index.ts
 var src_default = {
-  async fetch(request, env, ctx) {
-    return new Response("This Is The Family Office Site.");
+  async fetch(request) {
+    const remote = "https://waldfamilyoffice.com";
+    return await fetch(remote, request);
   }
 };
 

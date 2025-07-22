@@ -27,8 +27,13 @@
 // }
 
 export default {
-  async fetch(request: Request, env, ctx) {
-    return new Response("This Is The Family Office Site.");
+  async fetch(request: Request) : Promise<Response> {
+
+
+ const remote = "https://waldfamilyoffice.com";
+
+    return await fetch(remote, request);
+    // return new Response("This Is The Family Office Site.");
   },
 };
 
