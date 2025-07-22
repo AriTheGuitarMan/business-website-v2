@@ -46,7 +46,7 @@
 //   return new Response(output, { headers })
 // }
 
-
+import image from './assets/image.png?url';
 export default {
   async fetch(request): Promise<Response> {
     const html = `
