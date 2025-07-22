@@ -48,7 +48,7 @@
 
 import image from './assets/image.png?url';
 export default {
-  async fetch(request): Promise<Response> {
+  async fetch(): Promise<Response> {
     const html = `
     
     
@@ -71,10 +71,9 @@ export default {
 
     
     
-    
     `;
 
-    return new Response('FO', {
+    return new Response('WaldFamilyOfficeWebsite', {
       headers: {
         "content-type": "text/html;charset=UTF-8",
       },
