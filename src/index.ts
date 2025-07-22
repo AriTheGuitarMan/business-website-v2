@@ -26,16 +26,18 @@
 //   }
 // }
 
-export default {
-  async fetch(request: Request, env, ctx) {
+// export default {
+//   async fetch(request, env, ctx) {
 
-//  const url = "https://waldfamilyoffice.com";
-//  if (url){
-//       return Response.redirect(url, 301);
-//  }
- return fetch(request);
-// const modifiedRequest = new Request(url, request);
-    // return await fetch(remote, request);
-    // return new Response(modifiedRequest);
-},
-}
+// //  const url = "https://waldfamilyoffice.com";
+// //  if (url){
+// //       return Response.redirect(url, 301);
+// //  }
+// // const modifiedRequest = new Request(url, request);
+//     // return await fetch(remote, request);
+// return new Response("This Is The Wald Family Office Website.", {
+//       headers: { "content-type": "text/plain" },
+//     });
+// },
+// }
+
