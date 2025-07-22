@@ -1,8 +1,11 @@
 {
 "name": "my-worker",
 "compatibility_date": "2025-07-21",
-"main": "src/index.ts"   
-    // "assets": {
-    //     "directory": "./dist"
-    // }
+"main": "src/index.ts",
+"routes": [
+    {
+      "pattern": "waldfamilyoffice.com",
+      "custom_domain": true
+    }
+  ]
 }
