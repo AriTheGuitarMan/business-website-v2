@@ -46,9 +46,9 @@
 //   return new Response(output, { headers })
 // }
 
-import image from './assets/image.png?url';
+
 export default {
-  async fetch(): Promise<Response> {
+  async fetch(request): Promise<Response> {
     const html = `
     
     
@@ -71,12 +71,16 @@ export default {
 
     
     
+    
     `;
 
-    return new Response('WaldFamilyOfficeWebsite', {
+    return new Response(html, {
       headers: {
         "content-type": "text/html;charset=UTF-8",
       },
     });
   },
 } satisfies ExportedHandler;
+
+// npm audit fix; npx wrangler dev; npx wrangler deploy; npm run preview:worker; npm run deploy:worker;
+//npx update-browserslist-db@latest
