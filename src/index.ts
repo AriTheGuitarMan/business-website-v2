@@ -29,10 +29,10 @@
 export default {
   async fetch(request: Request, env, ctx) {
 
- const url = "https://waldfamilyoffice.com";
- if (url){
-      return Response.redirect(url, 301);
- }
+//  const url = "https://waldfamilyoffice.com";
+//  if (url){
+//       return Response.redirect(url, 301);
+//  }
  return fetch(request);
 // const modifiedRequest = new Request(url, request);
     // return await fetch(remote, request);
